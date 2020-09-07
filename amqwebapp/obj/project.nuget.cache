@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xJi0Yk1U91RUtBMafz8xkVu4/JB5hRgUCQnTcefFz2ezbqPZgS7TvwcJjewv6NCN0R02RwF2MBY/oSDXPJyLAg==",
+  "dgSpecHash": "s/AUlGvxdK+6dYf5Vb9DtA9JCKO8lCY79QkZp0cCa7r90hmqEfUMmAwN6XmAevmQhwQhc54WBIkucyE3dVhDUA==",
   "success": true,
-  "projectFilePath": "F:\\Codies\\ActiveMQ\\amqwebrepo\\amqwebapp\\amqwebapp.csproj",
+  "projectFilePath": "F:\\Codies\\ActiveMQ\\amqwebrepo\\AmqWebApp\\amqwebapp.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\RS\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
