@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "s/AUlGvxdK+6dYf5Vb9DtA9JCKO8lCY79QkZp0cCa7r90hmqEfUMmAwN6XmAevmQhwQhc54WBIkucyE3dVhDUA==",
+  "dgSpecHash": "7Np98JK0i5MKCsbkaZRzq6tzEfOlUncXSU6hjsY2ziYF/fOA4WNc78N7KUxAtdSiJ19+slsTm32ehHMoDs0N2Q==",
   "success": true,
-  "projectFilePath": "F:\\Codies\\ActiveMQ\\amqwebrepo\\AmqWebApp\\amqwebapp.csproj",
+  "projectFilePath": "F:\\Codies\\ActiveMQ\\amqwebrepo\\amqwebapp\\amqwebapp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\RS\\.nuget\\packages\\apache.nms.activemq.netcore\\1.7.2\\apache.nms.activemq.netcore.1.7.2.nupkg.sha512",
+    "C:\\Users\\RS\\.nuget\\packages\\apache.nms.netcore\\1.7.1\\apache.nms.netcore.1.7.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\RS\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
     "C:\\Users\\RS\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",

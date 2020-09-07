@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using amqwebapp.Models;
+using Apache.NMS;
+using Apache.NMS.Util;
 
 namespace amqwebapp.Controllers
 {
@@ -38,6 +40,59 @@ namespace amqwebapp.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult CheckAMQ(AmqModel model)
+        {
+            var url = model.Url;
+            
+            if (url != null && url.Length > 0)
+            {
+                try
+                {
+                    OperatorRequestObject operatorRequestObject = new OperatorRequestObject
+                    {
+                        ShortCode = "ABC"
+                    };
+                    Uri uri = new Uri("activemq:" + url);
+                    IConnectionFactory factory = new Apache.NMS.ActiveMQ.ConnectionFactory(uri);
+                    IConnection connection = factory.CreateConnection("admin", "admin");
+                    connection.Start();
+                    ISession session = connection.CreateSession(AcknowledgementMode.AutoAcknowledge);
+                    IDestination queueDestination = SessionUtil.GetDestination(session, "ExampleQueue");
+                    IMessageProducer messageProducer = session.CreateProducer(queueDestination);
+                    var objMessage = session.CreateObjectMessage(operatorRequestObject);
+                    messageProducer.Send(objMessage);
+                    session.Close();
+                    connection.Stop();
+                    ViewData["Message"] = "All Fine";
+                }
+                catch(Exception ex)
+                {
+                    ViewData["Message"] = ex.Message;
+                }
+                
+            }
+            else
+            {
+                ViewData["Message"] = "No URL";
+            }
+
+            
+
+            return View("Index");
+        }
+    }
+
+    [Serializable]
+    public class OperatorRequestObject
+    {
+        private string shortcode;
+
+        public string ShortCode
+        {
+            get { return shortcode; }
+            set { shortcode = value; }
         }
     }
 }

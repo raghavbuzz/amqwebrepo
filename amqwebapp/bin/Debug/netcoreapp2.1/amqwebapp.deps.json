@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "amqwebapp/1.0.0": {
         "dependencies": {
+          "Apache.NMS.ActiveMQ.NetCore": "1.7.2",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0"
@@ -33,6 +34,31 @@
         },
         "compile": {
           "amqwebapp.dll": {}
+        }
+      },
+      "Apache.NMS.ActiveMQ.NetCore/1.7.2": {
+        "dependencies": {
+          "Apache.NMS.NetCore": "1.7.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Apache.NMS.ActiveMQ.NetCore.dll": {
+            "assemblyVersion": "1.7.2.4108",
+            "fileVersion": "1.7.2.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/Apache.NMS.ActiveMQ.NetCore.dll": {}
+        }
+      },
+      "Apache.NMS.NetCore/1.7.1": {
+        "runtime": {
+          "lib/netcoreapp2.0/Apache.NMS.NetCore.dll": {
+            "assemblyVersion": "1.7.1.3894",
+            "fileVersion": "1.7.1.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/Apache.NMS.NetCore.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -3164,6 +3190,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Apache.NMS.ActiveMQ.NetCore/1.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kdpCvzYZcg8phKN2Up7A8RM9JhqjurHxI1SqyzCdRaqA2LISaLFHUTtLdD1bz71SagVt7bJmF9j+tCfCME81Dg==",
+      "path": "apache.nms.activemq.netcore/1.7.2",
+      "hashPath": "apache.nms.activemq.netcore.1.7.2.nupkg.sha512"
+    },
+    "Apache.NMS.NetCore/1.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0A/RkdFzrx5/i1y0YsVP5AVEc63Q/x3GaoubOy0y6PDWML2AyTZBA4YCi0JA0EG38lZGFh/TtYdAbD0DJlXXWw==",
+      "path": "apache.nms.netcore/1.7.1",
+      "hashPath": "apache.nms.netcore.1.7.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",

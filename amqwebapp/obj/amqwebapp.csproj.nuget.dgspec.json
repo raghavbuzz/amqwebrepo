@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Codies\\ActiveMQ\\amqwebrepo\\AmqWebApp\\amqwebapp.csproj": {}
+    "F:\\Codies\\ActiveMQ\\amqwebrepo\\amqwebapp\\amqwebapp.csproj": {}
   },
   "projects": {
-    "F:\\Codies\\ActiveMQ\\amqwebrepo\\AmqWebApp\\amqwebapp.csproj": {
+    "F:\\Codies\\ActiveMQ\\amqwebrepo\\amqwebapp\\amqwebapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Codies\\ActiveMQ\\amqwebrepo\\AmqWebApp\\amqwebapp.csproj",
+        "projectUniqueName": "F:\\Codies\\ActiveMQ\\amqwebrepo\\amqwebapp\\amqwebapp.csproj",
         "projectName": "amqwebapp",
-        "projectPath": "F:\\Codies\\ActiveMQ\\amqwebrepo\\AmqWebApp\\amqwebapp.csproj",
+        "projectPath": "F:\\Codies\\ActiveMQ\\amqwebrepo\\amqwebapp\\amqwebapp.csproj",
         "packagesPath": "C:\\Users\\RS\\.nuget\\packages\\",
-        "outputPath": "F:\\Codies\\ActiveMQ\\amqwebrepo\\AmqWebApp\\obj\\",
+        "outputPath": "F:\\Codies\\ActiveMQ\\amqwebrepo\\amqwebapp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Apache.NMS.ActiveMQ.NetCore": {
+              "target": "Package",
+              "version": "[1.7.2, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",

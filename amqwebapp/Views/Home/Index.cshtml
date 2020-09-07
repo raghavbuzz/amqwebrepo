@@ -2,6 +2,18 @@
     ViewData["Title"] = "Home Page";
 }
 
+@model AmqModel
+
 <h1>
     Hello
 </h1>
+@using (Html.BeginForm("CheckAMQ", "Home"))
+{
+    @Html.TextBoxFor(m => m.Url, new { style = "width: 500px;" })
+    <input type="submit" value="Submit Data" id="btnSubmit" />
+}
+@{
+    var message = ViewData["Message"];
+}
+
+@message;

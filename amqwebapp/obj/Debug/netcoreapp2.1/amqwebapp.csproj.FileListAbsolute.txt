@@ -10,7 +10,6 @@ F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\bin\Debug\netcoreapp2.1\amqwebapp.Views.
 F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\bin\Debug\netcoreapp2.1\amqwebapp.Views.pdb
 F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.AssemblyInfoInputs.cache
 F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.AssemblyInfo.cs
-F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.csproj.CoreCompileInputs.cache
 F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.RazorAssemblyInfo.cache
 F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.RazorAssemblyInfo.cs
 F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.TagHelpers.input.cache
@@ -33,3 +32,5 @@ F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.dll
 F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.pdb
 F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.genruntimeconfig.cache
 F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.csproj.CopyComplete
+F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.csprojAssemblyReference.cache
+F:\Codies\ActiveMQ\amqwebrepo\amqwebapp\obj\Debug\netcoreapp2.1\amqwebapp.csproj.CoreCompileInputs.cache

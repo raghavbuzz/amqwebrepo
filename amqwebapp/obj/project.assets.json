@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "Apache.NMS.ActiveMQ.NetCore/1.7.2": {
+        "type": "package",
+        "dependencies": {
+          "Apache.NMS.NetCore": "1.7.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/Apache.NMS.ActiveMQ.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Apache.NMS.ActiveMQ.NetCore.dll": {}
+        }
+      },
+      "Apache.NMS.NetCore/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/Apache.NMS.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Apache.NMS.NetCore.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4337,6 +4358,30 @@
     }
   },
   "libraries": {
+    "Apache.NMS.ActiveMQ.NetCore/1.7.2": {
+      "sha512": "kdpCvzYZcg8phKN2Up7A8RM9JhqjurHxI1SqyzCdRaqA2LISaLFHUTtLdD1bz71SagVt7bJmF9j+tCfCME81Dg==",
+      "type": "package",
+      "path": "apache.nms.activemq.netcore/1.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "apache.nms.activemq.netcore.1.7.2.nupkg.sha512",
+        "apache.nms.activemq.netcore.nuspec",
+        "lib/netcoreapp2.0/Apache.NMS.ActiveMQ.NetCore.dll"
+      ]
+    },
+    "Apache.NMS.NetCore/1.7.1": {
+      "sha512": "0A/RkdFzrx5/i1y0YsVP5AVEc63Q/x3GaoubOy0y6PDWML2AyTZBA4YCi0JA0EG38lZGFh/TtYdAbD0DJlXXWw==",
+      "type": "package",
+      "path": "apache.nms.netcore/1.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "apache.nms.netcore.1.7.1.nupkg.sha512",
+        "apache.nms.netcore.nuspec",
+        "lib/netcoreapp2.0/Apache.NMS.NetCore.dll"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -11801,6 +11846,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Apache.NMS.ActiveMQ.NetCore >= 1.7.2",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0"
@@ -11847,6 +11893,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "Apache.NMS.ActiveMQ.NetCore": {
+            "target": "Package",
+            "version": "[1.7.2, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
