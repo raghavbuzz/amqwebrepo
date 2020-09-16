@@ -56,7 +56,7 @@ namespace amqwebapp.Controllers
                     };
                     Uri uri = new Uri("activemq:" + url);
                     IConnectionFactory factory = new Apache.NMS.ActiveMQ.ConnectionFactory(uri);
-                    // IConnection connection = factory.CreateConnection("admin", "admin");
+                    IConnection connection = factory.CreateConnection(); // ("admin", "admin");
                     connection.Start();
                     ISession session = connection.CreateSession(AcknowledgementMode.AutoAcknowledge);
                     IDestination queueDestination = SessionUtil.GetDestination(session, "ExampleQueue");
