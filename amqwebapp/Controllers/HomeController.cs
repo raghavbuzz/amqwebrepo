@@ -56,7 +56,7 @@ namespace amqwebapp.Controllers
                     };
                     Uri uri = new Uri("activemq:" + url);
                     IConnectionFactory factory = new Apache.NMS.ActiveMQ.ConnectionFactory(uri);
-                    IConnection connection = factory.CreateConnection("admin", "admin");
+                    // IConnection connection = factory.CreateConnection("admin", "admin");
                     connection.Start();
                     ISession session = connection.CreateSession(AcknowledgementMode.AutoAcknowledge);
                     IDestination queueDestination = SessionUtil.GetDestination(session, "ExampleQueue");
@@ -65,7 +65,7 @@ namespace amqwebapp.Controllers
                     messageProducer.Send(objMessage);
                     session.Close();
                     connection.Stop();
-                    ViewData["Message"] = "All Fine";
+                    ViewData["Message"] = "All Fine even after romving Creds";
                 }
                 catch(Exception ex)
                 {
